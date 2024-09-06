@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de Avaliação Física</title>
+	<style>
+		/* Adiciona algum estilo básico para fazer o formulário parecer decente */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f9f9f9;
+		}
+		.container {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input {
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #ddd;
+		}
+		.button {
+			background-color: #337ab7;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Formulário de Avaliação Física</h1>
+		<form>
+			<div class="form-group">
+				<label class="label" for="altura">Altura (cm):</label>
+				<input class="input" type="number" id="altura" name="altura" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="peso">Peso (kg):</label>
+				<input class="input" type="number" id="peso" name="peso" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="circunferencia-quadril">Circunferência do Quadril (cm):</label>
+				<input class="input" type="number" id="circunferencia-quadril" name="circunferencia-quadril" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="teste-de-1-minuto">Teste de 1 Minuto (número de repetições):</label>
+				<input class="input" type="number" id="teste-de-1-minuto" name="teste-de-1-minuto" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="teste-de-sentado">Teste de Sentado (número de repetições):</label>
+				<input class="input" type="number" id="teste-de-sentado" name="teste-de-sentado" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="objetivo-de-treinamento">Objetivo de Treinamento:</label>
+				<select class="input" id="objetivo-de-treinamento" name="objetivo-de-treinamento" required>
+					<option value="">Selecione um objetivo</option>
+					<option value="perder-peso">Perder Peso</option>
+					<option value="ganhar-massa">Ganhar Massa</option>
+					<option value="manter-peso">Manter Peso</option>
+					<option value="melhorar-condicao-fisica">Melhorar Condição Física</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<button class="button" type="submit">Salvar Avaliação</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
