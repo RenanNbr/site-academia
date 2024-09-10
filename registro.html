@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Planos</title>
+	<link rel="stylesheet" href="./css/registro.css">
+	<style>
+		/* Adiciona algum estilo básico para fazer o formulário parecer decente */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f9f9f9;
+		}
+		.container {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input {
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #ddd;
+		}
+		.button {
+			background-color: #337ab7;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+
+<nav class="nav-header">
+
+	<div>
+
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="avaliacao.html">Avaliação Fisica</a></li>
+		<li><a href="planos.html">Planos</a></li>
+		<li><a href="ajuda.html">Ajuda e Suporte</a></li>
+		</ul>
+	</div>
+
+</nav>
+
+</header>
+
+	<div class="container">
+		<h1>Cadastro de Plano de Academia</h1>
+		<form>
+			<div class="form-group">
+				<label class="label" for="nome">Nome:</label>
+				<input class="input" type="text" id="nome" name="nome" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="email">E-mail:</label>
+				<input class="input" type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="telefone">Telefone:</label>
+				<input class="input" type="tel" id="telefone" name="telefone" required>
+			</div>
+			<div class="form-group">
+				<label class="label" for="plano">Plano:</label>
+				<select class="input" id="plano" name="plano" required>
+					<option value="">Selecione um plano</option>
+					<option value="basico">Plano Básico (R$ 29,99/mês)</option>
+					<option value="premium">Plano Premium (R$ 49,99/mês)</option>
+					<option value="elite">Plano Elite (R$ 99,99/mês)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<button class="button" type="submit">Cadastrar</button>
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<p>&copy; 2024 - Todos os direitos reservados</p>
+		<nav>
+			<ul>
+				<li><a href="#">Termos de uso</a></li>
+				<li><a href="#">Política de privacidade</a></li>
+				<li><a href="#">Sobre nós</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+</body>
+</html>
